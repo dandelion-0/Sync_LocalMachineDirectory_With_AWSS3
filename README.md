@@ -23,8 +23,10 @@ To configure the application, you need to modify the `app.config` file in the pr
 You need to provide your AWS access key and secret key in the configuration file. Locate the following lines and replace the placeholders with your actual keys:
 
 xml
+```
 <add key="S3AccessKey" value="YOUR_AWS_ACCESS_KEY" />
 <add key="S3SecretKey" value="YOUR_AWS_SECRET_KEY" />
+```
 
 ### S3 Bucket
 
