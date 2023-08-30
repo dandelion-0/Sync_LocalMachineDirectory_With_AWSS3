@@ -30,7 +30,7 @@ xml
 
 Specify the S3 bucket where you want to sync your local directory. Update the following line with your bucket name:
 
-xml
+```xml
 <add key="S3BuckeyName" value="YOUR_S3_BUCKET_NAME" />
 
 ### Sync Interval
