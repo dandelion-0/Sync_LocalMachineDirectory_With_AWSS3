@@ -16,7 +16,7 @@ Sync Local Machine Directory with AWS S3 is a Windows service application that a
 
 ### Configuration
 
-To configure the application, you need to modify the `app.config` file in the project.
+You need to modify the `app.config` file in the project.
 
 ### AWS Credentials
 
