@@ -32,22 +32,28 @@ xml
 
 Specify the S3 bucket where you want to sync your local directory. Update the following line with your bucket name:
 
-```xml
+xml
+```
 <add key="S3BuckeyName" value="YOUR_S3_BUCKET_NAME" />
+```
 
 ### Sync Interval
 
 Set the interval at which the synchronization process should run. The interval is specified in minutes. Update the following line with your desired interval:
 
-```xml
+xml
+```
 <add key="_timeinterval" value="Time_in_Minute_example_30" />
+```
 
 ### Local Directory
 
 Specify the local directory that you want to sync with the S3 bucket. Update the following line with the path to your local directory:
 
-```xml
+xml
+```
 <add key="Folder_path" value="PATH_TO_LOCAL_DIRECTORY" />
+```
 
 ## Application Installation
 1. Navigate to the appropriate .NET framework directory for your machine. For 64-bit machines, use the following command:
@@ -57,7 +63,7 @@ cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
 2. To install the Windows service, follow these steps:
    - Open a command prompt with administrative privileges.
    - Navigate to the location of the built executable file.
-   - Run the following command: `installutil.exe Sync_LocalMachineDirectory_With_AWSS3.exe
+   - Run the following command: `installutil.exe <Sync_LocalMachineDirectory_With_AWSS3\Sync_LocalMachineDirectory_With_AWSS3\bin\Debug\Sync_AWSS3.exe>`
 
 3. To Verify service is installed
    - Open the Services Manager and locate the service named "Sync_LocalMachineDirectory_With_AWSS3".
@@ -72,7 +78,10 @@ cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
 2. To uninstall the Windows service, follow these steps:
    - Open a command prompt with administrative privileges.
    - Navigate to the location of the built executable file.
-   - Run the following command: `installutil.exe -u Sync_LocalMachineDirectory_With_AWSS3.exe`## Contributing
+   - Run the following command: `installutil.exe -u <Sync_LocalMachineDirectory_With_AWSS3\Sync_LocalMachineDirectory_With_AWSS3\bin\Debug\Sync_AWSS3.exe>`
+  
+   
+## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
