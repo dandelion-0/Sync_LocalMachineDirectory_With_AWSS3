@@ -32,13 +32,15 @@ Specify the S3 bucket where you want to sync your local directory. Update the fo
 
 xml
 <add key="S3BuckeyName" value="YOUR_S3_BUCKET_NAME" />
-```### Sync Interval
+
+### Sync Interval
 
 Set the interval at which the synchronization process should run. The interval is specified in minutes. Update the following line with your desired interval:
 
 ```xml
 <add key="_timeinterval" value="Time_in_Minute_example_30" />
-```### Local Directory
+
+### Local Directory
 
 Specify the local directory that you want to sync with the S3 bucket. Update the following line with the path to your local directory:
 
