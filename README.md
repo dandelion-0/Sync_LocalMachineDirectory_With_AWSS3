@@ -2,7 +2,6 @@
 
 Sync Local Machine Directory with AWS S3 is a Windows service application that allows you to synchronize a local directory with an S3 bucket at regular intervals. This project provides a convenient way to automate the process of backing up your local files to the cloud.
 
-<span style="color: green;">Lacal Machine!</span>
 ## Usage
 
 1. After installing the Windows service, it will run in the background automatically.
