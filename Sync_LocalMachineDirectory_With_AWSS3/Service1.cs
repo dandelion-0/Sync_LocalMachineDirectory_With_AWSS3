@@ -28,7 +28,7 @@ namespace Sync_LocalMachineFolder_With_AWSS3
 
 
                 // Creating Credentials
-                // *Note* Change Region Name based on Region Configured on AWS Account 
+                // *Note* Change Amazon.RegionEndpoint Name based on Region Configured on AWS Account 
                 AmazonS3Client s3Client = new AmazonS3Client(_S3AccessKey, _S3SecretKey, Amazon.RegionEndpoint.APSouth1);
                 TransferUtility transferUtility = new TransferUtility(s3Client);
 
