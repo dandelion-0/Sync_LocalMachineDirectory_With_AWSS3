@@ -20,7 +20,7 @@ namespace Sync_LocalMachineFolder_With_AWSS3
         {
             try
             {
-                // Retrieve Credentials, Directoryname and BUcketName from AppSetting
+                // Retrieve nad Initalize AccessKey, SecretKey, To_Sync_Directoryname and BucketName from AppSetting
                 string _S3AccessKey = ConfigurationManager.AppSettings["S3AccessKey"];
                 string _S3SecretKey = ConfigurationManager.AppSettings["S3SecretKey"];
                 string localFolderPath = ConfigurationManager.AppSettings["Folder_path"];
@@ -28,7 +28,8 @@ namespace Sync_LocalMachineFolder_With_AWSS3
 
 
                 // Creating Credentials
-                // *Note* Change Amazon.RegionEndpoint Name based on Region Configured on AWS Account 
+                // *Note* 
+                // Change Amazon.RegionEndpoint Name based on Region Configured on AWS Account 
                 AmazonS3Client s3Client = new AmazonS3Client(_S3AccessKey, _S3SecretKey, Amazon.RegionEndpoint.APSouth1);
                 TransferUtility transferUtility = new TransferUtility(s3Client);
 
